@@ -1,0 +1,2 @@
+[run]
+omit = ./recognition_serv/main.py,*/__init__.py
