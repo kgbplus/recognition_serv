@@ -17,11 +17,15 @@ class LoggingConfig(BaseModel):
 
 
 class Settings(BaseSettings):
+    API_KEYS = [
+        ""
+    ]
+
     PROJECT_NAME: str = 'Object Recognition Server'
     PROJECT_SLUG: str = 'recognition_serv'
 
     DEBUG: bool = True
-    API_STR: str = "/api/v1"
+    API_STR: str = ""
 
     # ##################### Access Token Configuration #########################
     # TODO: Please note that, the secret key will be different for each running
