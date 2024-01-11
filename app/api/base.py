@@ -21,7 +21,7 @@ async def version() -> Any:
 
 
 @base_router.post('/recognize')
-async def predict_car_type(pic: UploadFile = File(...), api_key: str = Security(get_api_key)) -> Any:
+async def recognize(pic: UploadFile = File(...), api_key: str = Security(get_api_key)) -> Any:
     try:
         contents = pic.file.read()
     except Exception:

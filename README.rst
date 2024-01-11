@@ -1,9 +1,9 @@
-Object Recognition Server
+Objects Recognition Server
 =========================
 
 Introduction
 ------------
-Behold My Awesome Project!
+Objects recognition server!
 
 User Guide
 ----------

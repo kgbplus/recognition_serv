@@ -13,7 +13,7 @@ def _parse_requirements(filename):
 
 
 NAME = 'recognition_serv'
-SHORT_DESCRIPTION = "Behold My Awesome Project!"
+SHORT_DESCRIPTION = "Objects recognition server"
 URL = "http://127.0.0.1"
 AUTHOR = 'Roman Mindlin'
 EMAIL = 'roman@mindlin.ru'
