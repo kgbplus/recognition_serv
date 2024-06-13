@@ -5,3 +5,6 @@ requests~=2.30
 uvicorn~=0.22
 python-multipart
 pillow
+torch
+pandas
+opencv-python
