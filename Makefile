@@ -49,3 +49,8 @@ test:
 	python3 -m pip install -r requirements/dev.txt
 	python3 -m pip install -e .
 	python3 -m pytest
+	
+# Create pyinstaller executive
+pyinstaller:
+	pyinstaller --onefile -n recognitionserv --paths app --add-data app:app --add-data data\ultralytics:ultralytics --hidden-import app --hidden-import torch --hidden-import cv2 --hidden-import requests --hidden-import ultralitycs --collect-submodules ultralytics main.py app\application.py
+	
