@@ -35,5 +35,5 @@ async def recognize(pic: UploadFile = File(...), api_key: str = Security(get_api
         return ErrorResponse(message="Input file is incorrect")
     else:
         return RecognitionResponse(
-            prediction=results.pandas().xyxy[0].to_json(orient="records")
+            prediction=results.pandas().xyxy[0].to_dict(orient="records")
         )

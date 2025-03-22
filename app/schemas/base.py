@@ -9,7 +9,7 @@ class VersionResponse(BaseModel):
 
 class RecognitionResponse(BaseModel):
     """Response for recognition endpoint."""
-    prediction: str
+    prediction: list
 
 
 class ErrorResponse(BaseModel):
