@@ -4,6 +4,8 @@ ARG MODE
 
 ENV MODE=${MODE}
 
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+
 COPY ./requirements/base.txt .
 RUN pip install -r base.txt
 
